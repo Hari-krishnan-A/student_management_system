@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Management System - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="box">
+    <h2>Student Management System</h2>
+    <button id="logoutBtn" class="btn-cancel">Logout</button>
+
+    <div id="viewPanel" class="section hidden">
+      <h2>VIEW</h2>
+      <form id="viewForm">
+        <p>Reg No:</p>
+        <input type="number" id="viewRegno" placeholder="Reg No" />
+        <button type="submit" id="viewBtn" class="btn-view">Fetch</button>
+        <button type="button" id="viewCancel" class="btn-cancel">Cancel</button>
+      </form>
+      <div id="viewResult" class="result-box"></div>
+    </div>
+
+    <div id="insertPanel" class="section hidden">
+      <h2>INSERT</h2>
+      <form id="insertForm">
+        <p>Reg No:</p>
+        <input type="number" id="ins_regno" placeholder="Reg No" />
+        <p>Name:</p>
+        <input type="text" id="ins_name" placeholder="Name" />
+        <p>Year:</p>
+        <input type="number" id="ins_year" placeholder="Year" />
+        <p>Section:</p>
+        <input type="text" id="ins_section" placeholder="Section" />
+        <p>Marks</p>
+        <p>DBMS:</p>
+        <input type="number" id="ins_dbms" placeholder="DBMS" />
+        <p>CN:</p>
+        <input type="number" id="ins_cn" placeholder="CN" />
+        <p>TOC:</p>
+        <input type="number" id="ins_toc" placeholder="TOC" />
+        <p>DAA:</p>
+        <input type="number" id="ins_daa" placeholder="DAA" />
+        <p>EVS:</p>
+        <input type="number" id="ins_evs" placeholder="EVS" />
+        <p>OS:</p>
+        <input type="number" id="ins_os" placeholder="OS" />
+        <button type="submit" id="insertBtn" class="btn-insert">Insert</button>
+        <button type="button" id="insertCancel" class="btn-cancel">Cancel</button>
+      </form>
+      <p id="insertMsg"></p>
+    </div>
+
+    <div id="updatePanel" class="section hidden">
+      <h2>UPDATE</h2>
+      <form id="updateSearchForm">
+        <p>Reg No:</p>
+        <input type="number" id="upd_regno" placeholder="Reg No" />
+        <button type="submit" id="loadBtn" class="btn-update">Load</button>
+        <button type="button" id="updateCancel1" class="btn-cancel">Cancel</button>
+      </form>
+      <form id="updateForm" class="hidden">
+        <p>Name:</p>
+        <input type="text" id="upd_name" placeholder="Name" />
+        <p>Year:</p>
+        <input type="number" id="upd_year" placeholder="Year" />
+        <p>Section:</p>
+        <input type="text" id="upd_section" placeholder="Section" />
+        <p>Marks</p>
+        <p>DBMS:</p>
+        <input type="number" id="upd_dbms" placeholder="DBMS" />
+        <p>CN:</p>
+        <input type="number" id="upd_cn" placeholder="CN" />
+        <p>TOC:</p>
+        <input type="number" id="upd_toc" placeholder="TOC" />
+        <p>DAA:</p>
+        <input type="number" id="upd_daa" placeholder="DAA" />
+        <p>EVS:</p>
+        <input type="number" id="upd_evs" placeholder="EVS" />
+        <p>OS:</p>
+        <input type="number" id="upd_os" placeholder="OS" />
+        <button type="submit" id="updateBtn" class="btn-update">Update</button>
+        <button type="button" id="updateCancel2" class="btn-cancel">Cancel</button>
+      </form>
+      <p id="updateMsg"></p>
+    </div>
+
+    <div id="deletePanel" class="section hidden">
+      <h2>DELETE</h2>
+      <form id="deleteForm">
+        <p>Reg No:</p>
+        <input type="number" id="delRegno" placeholder="Reg No" />
+        <button type="submit" id="deleteBtn" class="btn-delete">Delete</button>
+        <button type="button" id="deleteCancel" class="btn-cancel">Cancel</button>
+      </form>
+      <p id="deleteMsg"></p>
+    </div>
+
+    <div class="nav-buttons">
+      <button id="viewTab" class="btn-view">VIEW</button>
+      <button id="insertTab" class="btn-insert">INSERT</button>
+      <button id="updateTab" class="btn-update">UPDATE</button>
+      <button id="deleteTab" class="btn-delete">DELETE</button>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

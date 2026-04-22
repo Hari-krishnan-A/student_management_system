@@ -1,0 +1,97 @@
+body {
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  margin: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #cfcfcf;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-view {
+  background-color: #a7c7e7;
+  color: #1f2937;
+}
+
+.btn-insert {
+  background-color: #b7e4c7;
+  color: #1f2937;
+}
+
+.btn-update {
+  background-color: #ffe8a1;
+  color: #1f2937;
+}
+
+.btn-delete {
+  background-color: #f5b7b1;
+  color: #1f2937;
+}
+
+.btn-cancel {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.box {
+  background-color: #ffffff;
+  border: 1px solid #d6d6d6;
+  padding: 14px;
+  width: 92%;
+  max-width: 500px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 12px 0;
+}
+
+.section {
+  border: 1px solid #d6d6d6;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.result-box {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fafafa;
+  white-space: pre-line;
+}
+
+.msg-success {
+  color: #006400;
+}
+
+.msg-error {
+  color: #8B0000;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-buttons {
+  text-align: center;
+}
